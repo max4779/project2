@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<style>
 		body{
 			font: 100% Lucida Sans, Verdana;
@@ -12,6 +13,11 @@
 			min-width: 900px;
 		}
 
+		.wrap{
+			position: relative;
+			overflow: auto;
+		}
+
 		#top, #sidebar, #bottom, .menuitem{
 			border-radius: 4px;
 			margin: 4px;
@@ -20,7 +26,7 @@
 		#top{
 			background-color: rgb(21, 146, 38);
 			color: #ffffff;
-			padding: 13px;
+			padding: 15px;
 		}
 
 		#sidebar{
@@ -48,18 +54,61 @@
 			float: left;
 		}
 
+		#main{
+			padding: 10px;
+			margin: 0 210px;
+		}
+
 		#top h1, #top p, #menulist{
 			margin: 0;
 			padding: 0;
 		}
+
+		.menuitem{
+			background-color: #f1f1f1;
+			border: 1px solid #d4d4d4;
+			list-style-type: none;
+			padding: 2px;
+			cursor: pointer;
+		}
+		.menuitem:hover{
+			background-color: #ffffff;
+		}
+		.menuitem:first-child{
+			background-color: rgb(21, 146, 38);
+			color: white;
+			font-weight: bold;
+		}
+
+		a{
+			color: #000000;
+			text-decoration: underline;
+		}
+
+		a:hover{
+			text-decoration: none;
+		}
+
+		@media (max-width: 800px){
+			#sidebar{
+				width: auto;
+				position: relative;
+			}
+			#main{
+				margin-right:0;
+			}
+		}
+
+		@media (max-width: 600px){
+			#menubar{
+				width: auto;
+				float: none;
+			}
+			#main{
+				margin: 0;
+			}
+		}
 	</style>
-
-
-
-
-
-
-
 
 </head>
 <body>
@@ -69,43 +118,45 @@
 		<h1>Welcome to KimYuGyeom's Homepage (22000152)</h1>
 		<p>Use the menu to select different Stylesheets</p>
 	</div>
-		<div id="menubar">
-		<ul id="menu">
-			<li class="item">Stylesheet 1
-			</li>
-			<li class="item">Stylesheet 2
-			</li>
-			<li class="item">Stylesheet 3
-			</li>
-			<li class="item">Stylesheet 4
-			</li>
-			<li class="item">No Stylesheet
-			</li>
-		</ul>
-	</div>
-		<div id="main">
-			<h1>Same Page Different Stylesheets</h1>
-   		<p>
-			This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
+	<div class="wrap">
+			<div id="menubar">
+			<ul id="menu">
+				<li class="item">Stylesheet 1
+				</li>
+				<li class="item">Stylesheet 2
+				</li>
+				<li class="item">Stylesheet 3
+				</li>
+				<li class="item">Stylesheet 4
+				</li>
+				<li class="item">No Stylesheet
+				</li>
+			</ul>
+		</div>
+			<div id="main">
+				<h1>Same Page Different Stylesheets</h1>
+   			<p>
+				This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
        		<br>
-			<a href="#">Stylesheet1</a><!--#에는 상대폴더 입력-->
-			, 
-			<a href="#">Stylesheet2</a>
-			, 
-			<a href="#">Stylesheet3</a>
-			, 
-			<a href="#">Stylesheet4</a>
-       		.
-		</p>
-			<h1>No Styles</h1>
-		<p>
-			This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
-			<a href="#">No Stylesheet.</a>	
-		</p>
-	</div>		
-		<div id="sidebar">
-		<h3>Side-Bar</h3>
-		Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+				<a href="#">Stylesheet1</a><!--#에는 상대폴더 입력-->
+				, 
+				<a href="#">Stylesheet2</a>
+				, 
+				<a href="#">Stylesheet3</a>
+				, 
+				<a href="#">Stylesheet4</a>
+       			.
+			</p>
+				<h1>No Styles</h1>
+			<p>
+				This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
+				<a href="#">No Stylesheet.</a>	
+			</p>
+		</div>		
+			<div id="sidebar">
+			<h3>Side-Bar</h3>
+			Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+		</div>
 	</div>
 		<div id="bottom">
 		Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
