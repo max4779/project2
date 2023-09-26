@@ -1,7 +1,96 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>nostyle</title>
+    <title>stylesheet4</title>
+        
+    <style>
+        body{
+            font: 100% Courier New;
+            margin: 20px;
+            line-height: 26px;
+            background-color: #000000;
+        }
+
+        .page{
+            min-width: 900px;
+        }
+
+        .wrap{
+            position: relative;
+            overflow: auto;
+        }
+
+        #top{
+            color: #64e905;
+            padding: 15px;
+        }
+
+        #main{
+            padding: 10px;
+            color: #64e905
+        }
+
+		#sidebar{
+			color: #ffffff;
+            border: 1px solid #ffffff;
+            border-radius: 4px;
+			padding: 10px;
+			width: 320px;
+			top: 0;
+			right: 0;
+			position: absolute;
+            font-size: 80%;
+            line-height: 20px;
+		}
+
+		#bottom{
+			border: 1px solid #ffffff;
+            border-radius: 4px;
+			color: #ffffff;;
+			text-align: center;
+			padding: 10px;
+			font-size: 70%;
+			line-height: 14px;
+		}
+
+        #top h1, #top p{
+            margin: 0;
+        }
+
+        .item{
+            color: #64e905;
+            cursor: pointer;
+        }
+
+        .item:nth-child(4){
+            color: white;
+            font-weight: bold;
+        }
+
+        item:hover{
+            color: #ffffff;
+        }
+        
+        a{
+            color: #ffffff;
+        }
+        a:hover{
+            color: #64e905;
+        }
+
+        @media(max-width: 600px){
+            #sidebar{
+                width: auto;
+                margin-bottom: 10px;
+                position: relative;
+            }
+        }
+
+
+    </style>
+
+
+
 </head>
 <body>
 
@@ -47,6 +136,7 @@
 					<h1>No Styles</h1>
 				<p>
 					This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
+					<br>
 					<a href="nostyle.html">No Stylesheet.</a>	
 				</p>
 			</div>		
