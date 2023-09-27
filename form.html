@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+</head>
+<body>
+    <form>
+        <h2>input text를 이용해서 학번을 입력받기</h2>
+        <label for="student number">Username:</label>
+        <input type="text" id="student number" name="student number" placeholder="Enter your student number" required>
+        <br><br><br>
+
+        <h2>radio를 사용해서 자신의 학기를 선택</h2>
+        <label>학기:</label><br>
+        <input type="radio" id="1학기" name="학기" value="1학기">
+        <label for="1학기">1학기</label><br>
+        <input type="radio" id="2학기" name="학기" value="2학기">
+        <label for="2학기">2학기</label><br>
+        <input type="radio" id="3학기" name="학기" value="3학기">
+        <label for="3학기">3학기</label><br>
+        <input type="radio" id="4학기" name="학기" value="4학기">
+        <label for="4학기">4학기</label><br>
+        <input type="radio" id="5학기" name="학기" value="5학기">
+        <label for="5학기">5학기</label><br>
+        <input type="radio" id="6학기" name="학기" value="6학기">
+        <label for="6학기">6학기</label><br>
+        <input type="radio" id="7학기" name="학기" value="7학기">
+        <label for="7학기">7학기</label><br>
+        <input type="radio" id="8학기" name="학기" value="8학기">
+        <label for="8학기">8학기</label><br>
+        <input type="radio" id="9학기 이상" name="학기" value="9학기 이상">
+        <label for="9학기 이상">9학기 이상</label>
+        
+        <br><br><br>
+
+        <h2>checkbox를 사용해본적 있는 휴대폰을 확인</h2>   
+        <label>휴대폰 종류:</label>
+        <input type="checkbox" id="갤럭시" name="휴대폰" value="갤럭시">
+        <label for="갤럭시">갤럭시</label>
+        <input type="checkbox" id="아이폰" name="휴대폰" value="아이폰">
+        <label for="아이폰">아이폰</label>
+        <input type="checkbox" id="기타" name="휴대폰" value="기타">
+        <label for="기타">기타</label>
+        <br><br><br>
+
+        <h2>select를 이용해서 전공 선택</h2>
+        <label for="전공">당신의 1전공을 선택하시오:</label>
+        <select id="전공" name="전공">
+            <option value="컴퓨터공학">컴퓨터공학</option>
+            <option value="전자공학">전자공학</option>
+            <option value="GLS">GLS</option>
+            <option value="ICT">ICT</option>
+        </select>
+        <br><br><br>
+
+        <h2>date를 이용해서 자신의 생일 선택</h2>
+        <label for="birthday">생일을 선택하시오:</label>
+        <input type="date" id="birthdate" name="birthdate">
+        <br><br><br>
+
+        <h2>textarea를 이용해서 불편사항 입력받기</h2>
+        <label for="불편사항">불편사항:</label>
+        <textarea id="불편사항" name="불편사항" rows="4" cols="40" placeholder="Enter your comments"></textarea>
+        <br><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
